@@ -2,11 +2,7 @@
 
 import './style.css';
 
-import React, {PrpTypes} from 'react';
-
-const propTypes = {
-    onClick: PropTypes.func.isRequired,
-};
+import React from 'react';
 
 function CreateBar({ onClick}) {
     return (
@@ -14,6 +10,5 @@ function CreateBar({ onClick}) {
     )
 }
 
-CreateBar.propTypes = propTypes;
 
 export default CreateBar;

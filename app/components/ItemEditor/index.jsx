@@ -1,6 +1,6 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
 
-class ItemEditor extends React.Component {
+export default class ItemEditor extends React.Component {
     render() {
 
         return (

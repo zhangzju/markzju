@@ -27,3 +27,5 @@ function ItemShowLayer({item}) {
         </div>
     )
 }
+
+export default ItemShowLayer;

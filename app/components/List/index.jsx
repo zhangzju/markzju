@@ -1,6 +1,8 @@
 import ListItem from '../ListItem';
 import React, {PropTypes} from 'react';
 
+import './style.css';
+
 const propTypes = {
     items: PropTypes.array.isRequired,
 };

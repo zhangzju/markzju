@@ -1,9 +1,19 @@
 import React, {PropTypes} from 'react';
 
-function ItemEditor ({item}) {
-    if (!item || !item.id) {
-        var item = "";
-    }
+class ItemEditor extends React.Component {
+    render() {
 
-    return 
+        return (
+        <div className="col-md-8 item-editor-component">
+            <div className="control-area">
+                <button className="btn btn-success">{saveText}</button>
+                <button className="btn secondary">Cancel</button>
+            </div>
+            <div className="edit-area">
+                <input ref="title" placeholder="Input the title" defaultValue={item.title}/>
+                <textarea ref="content" defaultValue="item.content" />
+            </div>
+        </div>
+        );
+    }
 }

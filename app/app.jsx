@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'babel-polyfill';
-import 'bootstrap/dist/css/bootstrap.css';
 
 import Deskmask from './components/Deskmark';
 

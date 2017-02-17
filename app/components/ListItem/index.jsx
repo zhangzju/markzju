@@ -5,7 +5,6 @@ import './style.css';
 
 const propTypes = {
     item: PropTypes.object.isRequired,
-    onClick: PropTypes.func.isRequired,
 };
 
 function ListItem({ item }) {

@@ -1,0 +1,14 @@
+
+body {
+    display: flex;
+}
+
+.container{
+  display: -webkit-flex;
+  display: flex;
+}
+
+.container .main{
+  -webkit-flex: 1;
+  flex: 1;
+}

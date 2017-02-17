@@ -40,12 +40,13 @@ export default class App extends React.Component {
         return (
             <section className="deskmark-component">
             <div className="container">
-                <div className="row">
+                <div className="left">
                     <div className="col-md-4 list-group">
                         <CreateBar  />
                         <List items={items} />
                     </div>
                 </div>
+                <div className="main"></div>
             </div>
         </section>
         )

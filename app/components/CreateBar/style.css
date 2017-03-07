@@ -1,0 +1,6 @@
+.create-bar-component {
+    margin: 2vh;
+    padding: 2vh;
+    border: 1px solid red;
+    display: block;
+}

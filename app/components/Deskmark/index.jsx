@@ -1,5 +1,6 @@
 
 import React from 'react';
+import uuid from 'uuid';
 
 import CreateBar from '../CreateBar';
 import List from '../List';
@@ -44,9 +45,10 @@ export default class App extends React.Component {
                     <div className="col-md-4 list-group">
                         <CreateBar  />
                         <List items={items} />
+                        <ItemEditor item={currentItem} />
+                        <ItemShowLayer item={currentItem} />
                     </div>
                 </div>
-                <div className="main"></div>
             </div>
         </section>
         )

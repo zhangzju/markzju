@@ -2,20 +2,22 @@ import React from 'react';
 
 import "./style.css";
 
-export default class ItemEditor extends React.Component {
-    render() {
-
+function ItemEditor({item}) {
+    if (!item || !item.id) {
         return (
-        <div className="col-md-8 item-editor-component">
-            <div className="control-area">
-                <button className="btn btn-success">{saveText}</button>
-                <button className="btn secondary">Cancel</button>
+            <div className="item-editor-layer-component">
+                <input type="text" ref="title" placeholder="title"/>
+                <textarea ref="content" placeholder="请填写内容"/>
             </div>
-            <div className="edit-area">
-                <input ref="title" placeholder="Input the title" defaultValue={item.title}/>
-                <textarea ref="content" defaultValue="item.content" />
-            </div>
-        </div>
-        );
+        )
     }
+
+    return (
+        <div className="edit-area">
+          <input ref="title" placeholder="请填写标题" defaultValue={item.title} />
+          <textarea ref="content" placeholder="请填写内容" defaultValue={item.content} />
+        </div>
+    )
 }
+
+export default ItemEditor;

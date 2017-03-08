@@ -21,6 +21,22 @@ export default class App extends React.Component {
         };
 
         this.saveItem = this.saveItem.bind(this);
+        this.selectItem = this.selectItem.bind(this);
+        this.createItem = this.createItem.bind(this);
+        this.deleteItem = this.deleteItem.bind(this);
+        this.editItem = this.editItem.bind(this);
+        this.cancelEdit = this.cancelEdit.bind(this);
+    }
+
+    selectItem(id){
+        if (id === this.state.selectedId) {
+            return;
+        }
+
+        this.setState({
+            selectedId: id,
+            editing: false,
+        });
     }
 
     saveItem(item) {
@@ -33,6 +49,38 @@ export default class App extends React.Component {
         this.setState({
             items: items
         });
+    }
+
+    createItem() {
+        this.setState({
+            editing: true,
+            selectedId: null,
+        })
+    }
+
+    deleteItem(id) {
+        if(!id){
+            return;
+        }
+
+        this.setState({
+            items:this.state.items.filter(
+                result => result.id !== id
+            ),
+        })
+    }
+
+    editItem(id) {
+        this.setState({
+            editing: true,
+            selectedId: id,
+        });
+    }
+
+    cancelEdit() {
+        this.setState({
+            editing: false,
+        })
     }
 
     render() {
@@ -50,7 +98,10 @@ export default class App extends React.Component {
             },
         ]
 
+        const currentItem = items[0];
+
         return (
+            
             <section className="deskmark-component">
             <div className="container">
                 <div className="left">

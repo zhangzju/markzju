@@ -20,7 +20,19 @@ export default class App extends React.Component {
             editing: false,
         };
 
+        this.saveItem = this.saveItem.bind(this);
+    }
 
+    saveItem(item) {
+        let items = this.state.items;
+        item.id = uuid.v4();
+        item.time = new Date().getTime();
+
+        items = [...items, item];
+
+        this.setState({
+            items: items
+        });
     }
 
     render() {

@@ -5,17 +5,32 @@ a {
 
 .container {
     display: flex;
-    margin: 20vh;
+    flex-flow: row nowrap;
+    justify-content: center; 
+    margin: 10vh;
+    min-height: 80vh;
 }
 
 .left {
     min-width: 20vh;
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items:stretch;
     flex-flow: column nowrap;
     border: 1px solid #CCC;
+    margin: 5px;
+}
+
+.middle {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    margin: 5px;
+    border: 1px solid darkblue;
+    min-height: 90%;
+    min-width: 45vh;
 }
 
 .right {
@@ -23,5 +38,8 @@ a {
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
-    padding: 5vh;
+    margin: 5px;
+    min-height: 90%;
+    border: 1px solid aqua;
+    width: 50%;
 }

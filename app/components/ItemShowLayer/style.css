@@ -1,0 +1,14 @@
+.item-show {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.control-area {
+    margin: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+

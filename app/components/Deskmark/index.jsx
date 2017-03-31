@@ -87,13 +87,13 @@ export default class App extends React.Component {
         const items = [
             {
                 "id": "00001",
-                "title": "00001",
-                "content": "# markdown",
+                "title": "markzju",
+                "content": "# markzju",
                 "time": 145
             },{
                 "id": "00002",
-                "title": "00002",
-                "content": "# second",
+                "title": "React",
+                "content": "# Fantastic",
                 "time": 146
             },
         ]
@@ -108,8 +108,10 @@ export default class App extends React.Component {
                         <CreateBar  />
                         <List items={items} />
                 </div>
-                <div className="right">
+                <div className="middle">
                     <ItemEditor item={currentItem} />
+                </div>
+                <div className="right">
                     <ItemShowLayer item={currentItem} />
                 </div>
             </div>

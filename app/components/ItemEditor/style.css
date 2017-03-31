@@ -1,0 +1,19 @@
+.edit-area {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.edit-area input {
+    margin: 3px;
+}
+
+.edit-area textarea {
+    height: 30vh;
+    max-height:45vh;
+    margin: 3px;
+}
+
+p {
+    margin: 2px;
+}

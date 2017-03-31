@@ -105,12 +105,12 @@ export default class App extends React.Component {
             <section className="deskmark-component">
             <div className="container">
                 <div className="left">
-                    <div className="col-md-4 list-group">
                         <CreateBar  />
                         <List items={items} />
-                        <ItemEditor item={currentItem} />
-                        <ItemShowLayer item={currentItem} />
-                    </div>
+                </div>
+                <div className="right">
+                    <ItemEditor item={currentItem} />
+                    <ItemShowLayer item={currentItem} />
                 </div>
             </div>
         </section>

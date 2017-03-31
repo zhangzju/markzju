@@ -18,7 +18,7 @@ function List ({ items }) {
     );
 
     return (
-        <div className="list-component col-md-4 list-group">{itemsContent}</div>
+        <div className="list">{itemsContent}</div>
     );
 }
 
